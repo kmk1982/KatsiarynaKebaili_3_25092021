@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bdd1044ed8.js" crossorigin="anonymous"></script>
+    <link href="css/style.css" rel="stylesheet"/>
+    <style>@import url('https://fonts.googleapis.com/css2? family= Roboto & family= Shrikhand & display=swap'); </style>
+    <link rel="shortcut icon" tipe="image/png" href="./img/logo/ohmyfood@2x.svg">
+    <title> accueil </title>
+</head>
+<body>
+  <header>
+<!---------------------- En-tête ---------------------->
+    <div id="header_logo">
+      <form action="../index.html">
+        <button id="retour_acceuil" type="submit">
+          <i class="fas fa-arrow-left"></i>
+        </button>
+      </form>
+      <p id="logo_titres">ohmyfood</p>
+    </div>
+  </header>
+<!---------------------- Corps Pincipal ---------------------->
+  <main>
+    <div id="localisations">
+      <i class="fa fa-map-marker-alt fa-lg"></i>
+      <input id="search"  type="search" placeholder="Paris,Belleville">
+    </div>
+    <div id="decouverte_restaurant">
+      <h1>Réservez le menu qui vous convient</h1>
+      <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+      <button id="dec_restaurant" href="#choix_restaurant">Explorer nos restaurants</button>
+    </div>
+    <section>
+      <h1>Fontionnement</h1>
+      <div class="Choix_fontion" href="#choix_restaurant">
+        <p class="puce">1</p>
+        <i class="fas fa-mobile-alt"></i>
+        <p>Choisissez un restaurant</p>
+      </div>
+      <div class="Choix_fontion">
+        <p class="puce">2</p>
+        <i class="fas fa-list"></i>
+        <p>Composez votre menu</p>
+      </div>
+      <div class="Choix_fontion" href="">
+        <p class="puce">3</p>
+        <i class="fas fa-store"></i>
+        <p>Dégustez au restaurant</p>
+      </div>
+    </section>
+    <section id="choix_restaurant">
+      <h1>Restaurant</h1>
+      <form class="restaurant" action="#menu_la_palette_du_gout" type="submit">
+        <div class="background_choix_restaurant">
+          <img id="la_palette_du_gout"/>
+        </div>
+        <div calss="end_class_restaurant">
+          <div class="text_choix_restaurant">
+            <h4>la palette du gout</h4>
+            <p>ménilmontant</p>
+          </div>
+          <div>
+            <button type="submit">
+              <i class="far fa-heart"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+      <form class="restaurant" action="restaurant/la_mote_enchantée.html" type="submit">
+        <div class="background_choix_restaurant">
+          <img id="la_note_enchantée"/>
+        </div>
+        <div calss="end_class_restaurant">
+          <div class="text_choix_restaurant">
+            <h4>La note enchantée</h4>
+            <p>Charonne</p>
+          </div>
+          <div>
+            <button type="submit">
+              <i class="far fa-heart"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+      <form class="restaurant" action="restaurant/a_la_francaise.html">
+        <div class="background_choix_restaurant">
+          <img id="a_la_francaise"/>
+        </div>
+        <div calss="end_class_restaurant">
+          <div class="text_choix_restaurant">
+            <h4>A la française</h4>
+            <p>Cité Rouge</p>
+          </div>
+          <div>
+              <button type="submit">
+                <i class="far fa-heart"></i>
+              </button>
+          </div>
+        </div>
+      </form>
+      <form class="restaurant" action="#menu_le_delice_des_sens" type="submit">
+        <div class="background_choix_restaurant">
+          <img id="le_delice_des_sens"/>
+        </div>
+        <div calss="end_class_restaurant">
+          <div class="text_choix_restaurant">
+            <h4>Le délice des sens</h4>
+            <p>Folie-Méricourt</p>
+          </div>
+          <div>
+            <button type="submit">
+              <i class="far fa-heart"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
+<!---------------------- Pieds de page ---------------------->
+  <footer>
+        <div>
+          <p id="titre_footer">ohmyfood</p>
+          <p><i class=""></i>Proposer un restaurant</p>
+          <p><i class=""></i>Devenir partenaire</p>
+          <p>Mention légales</p>
+          <a href="#adress_mail">Contact</a>
+        </div>
+
+  </footer>
+</body>
+</html> 
