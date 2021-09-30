@@ -1,0 +1,19 @@
+header{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+    padding-left: 5%;
+    &__titre_site{
+        display:flex;
+        width: 90%;
+        justify-content: center;
+    }
+    &__retour-acceuil{
+        border: none;
+        background-color: white;
+        font-size: x-large;
+        cursor: pointer
+    }
+} 

@@ -1,0 +1,14 @@
+$couleur-primaire:#9356DC;
+$couleur-secondaire: #FF79DA;
+$couleur-tertiaire: #99E2D0;
+$texte-zoom:120%;
+$texte-titre:200%;
+$box-shadow: 5px 5px 5px darken(white,15%);
+$box-shadow-hover: 5px 5px 5px darken(white,35%);
+$breakpoints: (
+    min-mobile: 441px,
+    g-mobile: 699px,
+    min-tab: 700px,
+    tablette: 1023px,
+    desktop: 1024px
+);

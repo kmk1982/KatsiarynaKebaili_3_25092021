@@ -1,3 +1,253 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+/*@mixin mixin-name {
+  css-property: value;
+}*/
+.bouton {
+  margin: 5%;
+  padding: 4% 6% 4% 6%;
+  text-align: center;
+  font-size: 120%;
+  cursor: pointer;
+  color: white;
+  border-radius: 200px;
+  box-shadow: 5px 5px 5px #d9d9d9;
+  border: none;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+}
+.bouton:hover {
+  box-shadow: 5px 5px 5px #a6a6a6;
+  background-image: linear-gradient(#ff93e1, #a16be0);
+}
 
+h1 {
+  font-style: oblique;
+  font-family: shrikhand;
+}
+
+a {
+  text-decoration: none;
+}
+
+a, p, h4, h2 {
+  font-family: roboto;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5%;
+}
+.header__titre_site {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+}
+.header__retour-acceuil {
+  border: none;
+  background-color: white;
+  font-size: x-large;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: black;
+  color: white;
+  padding: 5%;
+}
+
+.fas {
+  padding-right: 2%;
+}
+
+.decouverte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 3px solid #cccccc;
+}
+.decouverte__localisations {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5% 0 5% 0;
+  width: 100%;
+  background-color: #e0e0e0;
+}
+.decouverte__localisations__search {
+  margin-left: 5%;
+  width: 160px;
+  border: none;
+  font-weight: bold;
+  font-size: 120%;
+  color: black;
+  background-color: #e0e0e0;
+}
+.decouverte__restaurant {
+  padding: 5% 0 5% 0;
+  overflow: hidden;
+  width: 100%;
+  background-color: #f2f2f2;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.decouverte__restaurant__titre {
+  margin: 0;
+  font-weight: bold;
+  font-size: 200%;
+}
+.decouverte__restaurant__texte {
+  font-size: 120%;
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+  margin-top: 5%;
+  padding: 5% 0 5% 0;
+}
+.fonctionnement__titre {
+  padding-left: 5%;
+  margin: 0;
+  font-weight: bold;
+  font-size: 200%;
+}
+.fonctionnement__list {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: left;
+}
+.fonctionnement__element {
+  display: flex;
+  width: 100%;
+  justify-content: left;
+  align-items: center;
+  margin: 2%;
+  font-size: 120%;
+}
+.fonctionnement__element__nombres {
+  display: flex;
+  justify-content: center;
+  background: #9356DC;
+  border-radius: 100%;
+  color: white;
+  width: 4.5%;
+  height: 4.5%;
+  margin-left: -3.5%;
+  padding: 1%;
+  font-size: 120%;
+  z-index: 2;
+}
+.fonctionnement__element__bouton {
+  z-index: 1;
+  margin-left: -3%;
+  padding: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  cursor: pointer;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px #d9d9d9;
+  border: none;
+  background-color: #f2f2f2;
+}
+.fonctionnement__element__bouton--texte {
+  font-weight: bold;
+  font-size: 120%;
+}
+.fonctionnement__element__bouton .fas {
+  color: grey;
+  font-size: 120%;
+}
+.fonctionnement__element__bouton:hover {
+  background-color: #e4d5f6;
+  box-shadow: 5px 5px 5px #a6a6a6;
+}
+.fonctionnement__element__bouton:hover .fas {
+  color: #9356DC;
+}
+
+.choix {
+  margin-top: 5%;
+  background-color: #f2f2f2;
+  padding: 5%;
+}
+.choix__restaurant {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5%;
+  margin: 5% 0 5% 0;
+}
+.choix__restaurant__background {
+  display: flex;
+}
+.choix__restaurant__background img {
+  z-index: 1;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  height: 300px;
+}
+.choix__restaurant__background img#la_palette_du_gout {
+  background: no-repeat center/cover url(../../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+}
+.choix__restaurant__background img#la_note_enchantée {
+  background: no-repeat center/cover url(../../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+}
+.choix__restaurant__background img#a_la_francaise {
+  background: no-repeat center/cover url(../../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+}
+.choix__restaurant__background img#le_delice_des_sens {
+  background: no-repeat center/cover url(../../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+}
+.choix__restaurant__background p {
+  overflow: hidden;
+  height: 2%;
+  z-index: 2;
+  text-transform: capitalize;
+  margin-left: -25%;
+  padding: 2%;
+  background-color: #99E2D0;
+  color: #1b6150;
+  border-radius: 5%;
+}
+.choix__restaurant__designation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5% 0 5%;
+  text-transform: capitalize;
+  color: black;
+}
+.choix__restaurant__designation .far {
+  font-size: 200%;
+  cursor: pointer;
+}
+.choix__restaurant__designation .far:hover {
+  color: #9356DC;
+}
+
+/*
+@import "./utils/extensions";
+@import "./base/typography";
+@import "./layouts/container";
+@import "./layouts/form";
+@import "./pages/work";
+@import "./pages/about";*/
 
 /*# sourceMappingURL=style.css.map */
