@@ -1,0 +1,163 @@
+.decouverte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 3px solid darken(white,20%);
+    &__localisations{
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 5% 0 5% 0;
+        width: 100%;
+        background-color:darken(white,12%) ;
+        &__search{
+            margin-left: 5%;
+            width: 160px;
+            border: none;
+            font-weight: bold;
+            font-size: $texte-zoom;
+            color: black;
+            background-color:darken(white,12%) ;
+        }
+    }
+    &__restaurant{
+        padding: 5% 0 5% 0 ;
+        overflow: hidden;
+        width: 100%;
+        background-color:darken(white,5%) ;
+        display: flex;
+        text-align:center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__titre{
+            @include titre_index;
+        }
+        &__texte{
+            font-size: $texte-zoom;
+        }
+    }
+}
+.fonctionnement{
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+    width: 100%;
+    margin-top: 5%;
+    padding: 5% 0 5% 0 ;
+    &__titre{
+        padding-left: 5%;      
+        @include titre_index;
+    }
+    &__list{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: left;
+    }
+    &__element{
+        display: flex;
+        width: 100%;
+        justify-content:left;
+        align-items: center;
+        margin: 2%;
+        font-size: $texte-zoom;
+        &__nombres{
+            display:flex;
+            justify-content: center;
+            background: $couleur-primaire;
+            border-radius: 100%;
+            color:  white;
+            width: 4.5%;
+            height: 4.5%;
+            margin-left: -3.5% ;
+            padding: 1%;
+            font-size: $texte-zoom;
+            z-index: 2;
+        }
+        &__bouton{
+            z-index: 1;
+            margin-left: -3%;
+            @include bouton-fonction;
+            &--texte{
+                font-weight: bold;
+                font-size: $texte-zoom;
+            }
+            & .fas{
+                color: grey;            
+                font-size: $texte-zoom;
+            }
+            &:hover{ 
+                background-color:lighten($couleur-primaire ,30%) ;
+                box-shadow: $box-shadow-hover;
+                & .fas{
+                    color:$couleur-primaire;  
+                }
+            }
+        }
+    }
+}
+.choix{
+    margin-top: 5%;
+    background-color:darken(white,5%);
+    padding: 5%;
+    &__restaurant{
+        display: flex;
+        flex-direction: column;
+        background-color:white;
+        border-radius: 5%;
+        margin: 5% 0 5% 0;
+        &__background{
+            display: flex;
+
+        }
+        &__background img{
+            z-index: 1;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            width:100%;
+            height: 300px;
+            }
+        }
+        &__background p{
+            overflow: hidden;
+            height: 2%;
+            z-index: 2;
+            text-transform: capitalize;
+            margin-left: -25%;
+            padding: 2%;
+            background-color: $couleur-tertiaire;
+            color:darken($couleur-tertiaire,50%);
+            border-radius: 5%;
+        }
+        &__designation{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 5% 0 5%;
+            text-transform: capitalize;
+            color: black;
+            & .far{
+                font-size: $texte-titre;
+                cursor: pointer;
+                &:hover{
+                    color: $couleur-primaire;
+                }
+            }
+
+        }
+    }
+
+#la_palette_du_gout{
+    background:no-repeat center/cover url(../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+}
+#la_note_enchantée{
+    background:no-repeat center/cover url(../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+}
+#a_la_francaise{
+    background:no-repeat center/cover url(../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+}
+#le_delice_des_sens{
+    background:no-repeat center/cover url(../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+} 

@@ -203,18 +203,6 @@ footer {
   width: 100%;
   height: 300px;
 }
-.choix__restaurant__background img#la_palette_du_gout {
-  background: no-repeat center/cover url(../../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-}
-.choix__restaurant__background img#la_note_enchantée {
-  background: no-repeat center/cover url(../../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
-}
-.choix__restaurant__background img#a_la_francaise {
-  background: no-repeat center/cover url(../../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-}
-.choix__restaurant__background img#le_delice_des_sens {
-  background: no-repeat center/cover url(../../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-}
 .choix__restaurant__background p {
   overflow: hidden;
   height: 2%;
@@ -242,6 +230,22 @@ footer {
   color: #9356DC;
 }
 
+#la_palette_du_gout {
+    background: no-repeat center/cover url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  }
+  
+  #la_note_enchantée {
+    background: no-repeat center/cover url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  }
+  
+  #a_la_francaise {
+    background: no-repeat center/cover url(../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  }
+  
+  #le_delice_des_sens {
+    background: no-repeat center/cover url(../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  }
+  
 /*
 @import "./utils/extensions";
 @import "./base/typography";
