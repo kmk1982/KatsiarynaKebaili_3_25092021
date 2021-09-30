@@ -80,10 +80,8 @@
             z-index: 1;
             margin-left: -3%;
             @include bouton-fonction;
-            &--texte{
                 font-weight: bold;
                 font-size: $texte-zoom;
-            }
             & .fas{
                 color: grey;            
                 font-size: $texte-zoom;
