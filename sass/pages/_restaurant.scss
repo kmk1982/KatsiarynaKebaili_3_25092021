@@ -35,14 +35,29 @@
                 text-decoration-style: solid;
             }
         }
+        &__liste{
+            @include g-mobile-only{
+                display: flex;
+                flex-direction:row;
+                flex-wrap: wrap;
+                justify-content:space-evenly;
+            }
+        }
         & .plats{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            width: 90%;
+            min-width: 360px;
+            max-width: 450px;
             background-color: white;
             margin: $haut_bas;
             border-radius: 20px;
             padding:$droit_gauche;
+            @include g-mobile-only{
+                margin: 5px;
+                width: 400px;
+            }
             &__titres{
                 margin-bottom: 0;
                 font-weight: bold;
@@ -65,7 +80,6 @@
     justify-content: center;
     align-items: left;
     background-color:$font-gris ;
-    margin-top: -5%;
-    padding-bottom: 15%;
+    padding-bottom: 50px;
 
 }

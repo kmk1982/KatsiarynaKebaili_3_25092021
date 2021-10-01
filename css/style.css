@@ -5,8 +5,8 @@
 }*/
 .bouton {
   width: 340px;
-  margin: 5%;
-  padding: 3% 5% 3% 5%;
+  margin: 25px;
+  padding: 15px 25px 15px 25px;
   text-align: center;
   font-size: 120%;
   cursor: pointer;
@@ -45,7 +45,6 @@ a, p, h4, h2 {
 .header {
   display: flex;
   flex-direction: row;
-  width: 100%;
   justify-content: center;
   align-items: center;
   padding-left: 5%;
@@ -87,7 +86,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 5% 0 5% 0;
+  padding: 20px 0 20px 0;
   width: 100%;
   background-color: #e0e0e0;
 }
@@ -101,7 +100,7 @@ footer {
   background-color: #e0e0e0;
 }
 .decouverte__restaurant {
-  padding: 5% 0 5% 0;
+  padding: 20px 0 20px 0;
   overflow: hidden;
   width: 100%;
   background-color: #f2f2f2;
@@ -125,28 +124,32 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: left;
-  width: 100%;
-  margin-top: 5%;
-  padding: 5% 0 5% 0;
+  margin-top: 25px;
+  padding: 20px 0 20px 0;
 }
 .fonctionnement__titre {
-  padding-left: 5%;
+  padding-left: 50px;
   margin: 0;
   font-weight: bold;
   font-size: 200%;
 }
 .fonctionnement__list {
   display: flex;
-  width: 100%;
   flex-direction: column;
   justify-content: left;
 }
+@media screen and (min-width: 699px) {
+  .fonctionnement__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
 .fonctionnement__element {
   display: flex;
-  width: 100%;
-  justify-content: left;
   align-items: center;
-  margin: 2%;
+  margin: 20px 0 20px 0;
   font-size: 120%;
 }
 .fonctionnement__element__nombres {
@@ -155,17 +158,20 @@ footer {
   background: #9356DC;
   border-radius: 100%;
   color: white;
-  width: 4.5%;
-  height: 4.5%;
-  margin-left: -3.5%;
-  padding: 1%;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
   font-size: 120%;
   z-index: 2;
 }
 .fonctionnement__element__bouton {
   z-index: 1;
-  margin-left: -3%;
-  padding: 5%;
+  width: 100%;
+  min-width: 400px;
+  max-width: 512px;
+  height: 100px;
+  margin-left: -25px;
+  padding: 25px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -192,16 +198,24 @@ footer {
 
 /*---------- selection du restaurant ----------*/
 .choix {
-  margin-top: 5%;
+  margin-top: 20px;
   background-color: #f2f2f2;
-  padding: 5%;
+  padding: 20px;
+}
+@media screen and (min-width: 699px) {
+  .choix__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 }
 .choix__restaurant {
   display: flex;
   flex-direction: column;
   background-color: white;
-  border-radius: 5%;
-  margin: 5% 0 5% 0;
+  border-radius: 20px;
+  margin: 20px 0 20px 0;
 }
 .choix__restaurant__background {
   display: flex;
@@ -215,11 +229,11 @@ footer {
 }
 .choix__restaurant__background p {
   overflow: hidden;
-  height: 2%;
+  height: 10px;
   z-index: 2;
   text-transform: capitalize;
-  margin-left: -25%;
-  padding: 2%;
+  margin-left: -100px;
+  padding: 10px;
   background-color: #99E2D0;
   color: #1b6150;
   border-radius: 5%;
@@ -228,7 +242,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 5% 0 5%;
+  padding: 0 20px 0 20px;
   text-transform: capitalize;
   color: black;
 }
@@ -250,7 +264,6 @@ restaurant {
   background-color: #f2f2f2;
   margin-top: -15%;
 }
-
 .restaurant .titres_page {
   display: flex;
   justify-content: space-between;
@@ -262,7 +275,6 @@ restaurant {
   margin-left: -5.5%;
   padding: 5%;
 }
-
 .restaurant .type_plats__titre {
   text-transform: uppercase;
 }
@@ -273,15 +285,32 @@ restaurant {
   text-decoration-color: #99E2D0;
   text-decoration-style: solid;
 }
+@media screen and (min-width: 699px) {
+  .restaurant .type_plats__liste {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
 .restaurant .type_plats .plats {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 90%;
+  min-width: 360px;
+  max-width: 450px;
   background-color: white;
-  margin: 5% 0 5% 0;
+  margin: 20px 0 20px 0;
   border-radius: 20px;
-  padding: 0 5% 0 5%;
+  padding: 0 20px 0 20px;
 }
+@media screen and (min-width: 699px) {
+  .restaurant .type_plats .plats {
+    margin: 5px;
+    width: 400px;
+  }
+}  
 .restaurant .type_plats .plats__titres {
   margin-bottom: 0;
   font-weight: bold;
@@ -301,8 +330,7 @@ restaurant {
   justify-content: center;
   align-items: left;
   background-color: #f2f2f2;
-  margin-top: -5%;
-  padding-bottom: 15%;
+  padding-bottom: 50px;
 }
 
 /*

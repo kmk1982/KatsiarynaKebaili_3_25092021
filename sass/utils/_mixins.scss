@@ -4,8 +4,8 @@
 
 @mixin bouton_project{
     width: 340px;
-    margin: 5%;
-    padding: 3% 5% 3% 5% ;
+    margin: 25px;
+    padding: 15px 25px 15px 25px ;
     text-align: center;
     font-size: $texte-zoom;
     cursor: pointer;
@@ -24,7 +24,7 @@
     font-size: $texte-titre;
 }
 @mixin bouton-fonction{
-    padding: 5% ;
+    padding: 25px ;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -34,4 +34,9 @@
     box-shadow: $box-shadow;
     border: none;
     background-color:darken(white,5%) ;
+}
+@mixin g-mobile-only{
+    @media screen and(min-width:map-get($breakpoints, g-mobile)){
+        @content;
+    }
 } 

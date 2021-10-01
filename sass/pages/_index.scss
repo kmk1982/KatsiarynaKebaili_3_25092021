@@ -45,25 +45,27 @@
     display: flex;
     flex-direction: column;
     align-items:left;
-    width: 100%;
-    margin-top: 5%;
+    margin-top: 25px;
     padding: $haut_bas;
     &__titre{
-        padding-left: 5%;      
+        padding-left: 50px;      
         @include titre_index;
     }
     &__list{
         display: flex;
-        width: 100%;
         flex-direction: column;
         justify-content: left;
+        @include g-mobile-only{
+            display: flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+            justify-content:space-evenly;
+        }
     }
     &__element{
         display: flex;
-        width: 100%;
-        justify-content:left;
         align-items: center;
-        margin: 2%;
+        margin: $haut_bas;
         font-size: $texte-zoom;
         &__nombres{
             display:flex;
@@ -71,16 +73,19 @@
             background: $couleur-primaire;
             border-radius: 100%;
             color:  white;
-            width: 4.5%;
-            height: 4.5%;
-            margin-left: -3.5% ;
-            padding: 1%;
+            width: 30px;
+            height: 30px;
+            padding: 5px;
             font-size: $texte-zoom;
             z-index: 2;
         }
         &__bouton{
             z-index: 1;
-            margin-left: -3%;
+            width: 100%;
+            min-width: 400px;
+            max-width: 512px;
+            height: 100px;
+            margin-left: -25px;
             @include bouton-fonction;
                 font-weight: bold;
                 font-size: $texte-zoom;
@@ -100,14 +105,22 @@
 }
 /*---------- selection du restaurant ----------*/
 .choix{
-    margin-top: 5%;
+    margin-top: 20px;
     background-color:$font-gris;
-    padding: 5%;
+    padding: 20px;
+    &__list{
+        @include g-mobile-only{
+            display: flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+            justify-content:space-evenly;
+        }
+    }
     &__restaurant{
         display: flex;
         flex-direction: column;
         background-color:white;
-        border-radius: 5%;
+        border-radius: 20px;
         margin: $haut_bas;
         &__background{
             display: flex;
@@ -120,11 +133,11 @@
             }
             & p{
                 overflow: hidden;
-                height: 2%;
+                height: 10px;
                 z-index: 2;
                 text-transform: capitalize;
-                margin-left: -25%;
-                padding: 2%;
+                margin-left: -100px;
+                padding: 10px;
                 background-color: $couleur-tertiaire;
                 color:darken($couleur-tertiaire,50%);
                 border-radius: 5%;
