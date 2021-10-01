@@ -1,0 +1,6 @@
+fa-heart{
+    font-size: $texte-titre;
+    cursor: pointer;
+    &:hover{
+        color: $couleur-primaire;
+    }

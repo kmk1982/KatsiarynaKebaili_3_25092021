@@ -1,0 +1,71 @@
+.background{
+    display: flex;
+    & img{
+        width:100%;
+        height: 512px;
+    }
+}
+.restaurant{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    padding: 5%;
+    background-color:$font-gris ;
+    margin-top: -15%;
+    & .titres_page{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color:$font-gris ;
+        width: 101%;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;  
+        margin-left: -5.5%;
+        padding: 5%;
+    }
+    & .type_plats{
+        &__titre{
+            text-transform:uppercase;
+            & span{
+                text-underline-offset: 8px;
+                text-decoration-thickness: 3px;
+                text-decoration-line: underline ;
+                text-decoration-color:$couleur-tertiaire;
+                text-decoration-style: solid;
+            }
+        }
+        & .plats{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: white;
+            margin: $haut_bas;
+            border-radius: 20px;
+            padding:$droit_gauche;
+            &__titres{
+                margin-bottom: 0;
+                font-weight: bold;
+                font-size: 120%;
+            }
+            &__texte{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            &__prix{
+                font-weight: bold;
+            }
+
+        }
+    }
+}
+.bouton_commander{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    background-color:$font-gris ;
+    margin-top: -5%;
+    padding-bottom: 15%;
+
+}

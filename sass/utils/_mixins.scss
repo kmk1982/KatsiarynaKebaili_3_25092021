@@ -2,9 +2,10 @@
   css-property: value;
 }*/
 
-@mixin bouton_project{ 
+@mixin bouton_project{
+    width: 340px;
     margin: 5%;
-    padding: 4% 6% 4% 6% ;
+    padding: 3% 5% 3% 5% ;
     text-align: center;
     font-size: $texte-zoom;
     cursor: pointer;

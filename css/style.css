@@ -4,8 +4,9 @@
   css-property: value;
 }*/
 .bouton {
+  width: 340px;
   margin: 5%;
-  padding: 4% 6% 4% 6%;
+  padding: 3% 5% 3% 5%;
   text-align: center;
   font-size: 120%;
   cursor: pointer;
@@ -18,6 +19,14 @@
 .bouton:hover {
   box-shadow: 5px 5px 5px #a6a6a6;
   background-image: linear-gradient(#ff93e1, #a16be0);
+}
+
+.fa-heart {
+  font-size: 200%;
+  cursor: pointer;
+}
+.fa-heart:hover {
+  color: #9356DC;
 }
 
 h1 {
@@ -66,6 +75,7 @@ footer {
   padding-right: 2%;
 }
 
+/*---------- Presentation et futur zone de localisation ----------*/
 .decouverte {
   display: flex;
   flex-direction: column;
@@ -110,6 +120,7 @@ footer {
   font-size: 120%;
 }
 
+/*---------- fonction(menu) du site ----------*/
 .fonctionnement {
   display: flex;
   flex-direction: column;
@@ -179,6 +190,7 @@ footer {
   color: #9356DC;
 }
 
+/*---------- selection du restaurant ----------*/
 .choix {
   margin-top: 5%;
   background-color: #f2f2f2;
@@ -220,27 +232,79 @@ footer {
   text-transform: capitalize;
   color: black;
 }
-.choix__restaurant__designation .far {
-  font-size: 200%;
-  cursor: pointer;
+
+.background {
+  display: flex;
 }
-.choix__restaurant__designation .far:hover {
-  color: #9356DC;
+.background img {
+  width: 100%;
+  height: 512px;
 }
 
-#la_palette_du_gout {
-  background: no-repeat center/cover url(../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg); 
+restaurant {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  padding: 5%;
+  background-color: #f2f2f2;
+  margin-top: -15%;
 }
-#la_note_enchantée {
-  background: no-repeat center/cover url(../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+
+.restaurant .titres_page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  width: 101%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  margin-left: -5.5%;
+  padding: 5%;
 }
-#a_la_francaise {
-  background: no-repeat center/cover url(../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+
+.restaurant .type_plats__titre {
+  text-transform: uppercase;
 }
-#le_delice_des_sens {
-    background: no-repeat center/cover url(../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+.restaurant .type_plats__titre span {
+  text-underline-offset: 8px;
+  text-decoration-thickness: 3px;
+  text-decoration-line: underline;
+  text-decoration-color: #99E2D0;
+  text-decoration-style: solid;
 }
-  
+.restaurant .type_plats .plats {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  margin: 5% 0 5% 0;
+  border-radius: 20px;
+  padding: 0 5% 0 5%;
+}
+.restaurant .type_plats .plats__titres {
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 120%;
+}
+.restaurant .type_plats .plats__texte {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.restaurant .type_plats .plats__prix {
+  font-weight: bold;
+}
+
+.bouton_commander {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  background-color: #f2f2f2;
+  margin-top: -5%;
+  padding-bottom: 15%;
+}
+
 /*
 @import "./utils/extensions";
 @import "./base/typography";
@@ -248,5 +312,21 @@ footer {
 @import "./layouts/form";
 @import "./pages/work";
 @import "./pages/about";*/
+/*---------- images de l'index ----------*/
+.la_palette_du_gout {
+  background: no-repeat center/cover url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+}
+
+.la_note_enchantée {
+  background: no-repeat center/cover url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+}
+
+.a_la_francaise {
+  background: no-repeat center/cover url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+}
+
+.le_delice_des_sens {
+  background: no-repeat center/cover url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+}
 
 /*# sourceMappingURL=style.css.map */
