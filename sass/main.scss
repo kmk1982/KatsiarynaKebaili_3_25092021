@@ -5,10 +5,13 @@
 @import "./components/buttons";
 @import "./components/icon";
 @import "./base/base";
+@import "./base/animation";
 @import "./layouts/header";
 @import "./layouts/footer";
 @import "./pages/index";
 @import "./pages/restaurant";
+@import "./themes/loading-spinner";
+@import "img";
 /*
 @import "./utils/extensions";
 @import "./base/typography";
@@ -17,19 +20,3 @@
 @import "./pages/work";
 @import "./pages/about";*/
 /*---------- images de l'index ----------*/
-
-.la_palette_du_gout {
-    background: no-repeat center/cover url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-  }
-  
-  .la_note_enchantée {
-    background: no-repeat center/cover url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
-  }
-  
-  .a_la_francaise {
-    background: no-repeat center/cover url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-  }
-  
-  .le_delice_des_sens {
-    background: no-repeat center/cover url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-  } 

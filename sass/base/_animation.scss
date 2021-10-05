@@ -1,0 +1,42 @@
+
+@keyframes loading-spinner {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+@keyframes main{
+    from{
+        transform: translateX(-9999px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes check{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes ellipse{
+    from{
+        max-width: 100%;
+    }
+    to{
+        max-width: 250px; 
+    }
+}
+@keyframes progressive {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}

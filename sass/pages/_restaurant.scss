@@ -1,3 +1,4 @@
+/*---------- image du restaurant ----------*/
 .background{
     display: flex;
     & img{
@@ -5,6 +6,8 @@
         height: 512px;
     }
 }
+
+/*---------- liste des plats du restaurant ----------*/
 .restaurant{
     display: flex;
     flex-direction: column;
@@ -36,6 +39,22 @@
             }
         }
         &__liste{
+            & div:nth-child(1){
+                animation: 1s ease-in 1.5s both progressive;
+                animation-delay: 0s;
+            }
+            & div:nth-child(2){
+                animation: 1s ease-in 1.5s both progressive;
+                animation-delay: 0.5s;
+            }
+            & div:nth-child(3){
+                animation: 1s ease-in 1.5s both progressive;
+                animation-delay: 1.5s;
+            }
+            & div:nth-child(4){
+                animation: 1s ease-in 1.5s both progressive;
+                animation-delay: 2s;
+            }
             @include g-mobile-only{
                 display: flex;
                 flex-direction:row;
@@ -44,34 +63,91 @@
             }
         }
         & .plats{
+            overflow: hidden;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: space-between;
+            align-items: center;
             width: 90%;
             min-width: 360px;
             max-width: 450px;
+            max-height: 100px;
             background-color: white;
             margin: $haut_bas;
             border-radius: 20px;
-            padding:$droit_gauche;
             @include g-mobile-only{
                 margin: 5px;
-                width: 400px;
+                width: 450px;
+            }
+            &__animation{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 90%;
+                border: 3px ;
+                padding-left: 15px;
             }
             &__titres{
-                margin-bottom: 0;
+                margin: 0;
                 font-weight: bold;
                 font-size: 120%;
             }
             &__texte{
+                margin-top: 0;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
+                & p{
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
             }
             &__prix{
                 font-weight: bold;
             }
+            &__check{
+                margin-right: -151px;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                width: 100px;
+                height: 200px;
+                background-color: $couleur-tertiaire;
+                border-top-right-radius:20px;
+                border-bottom-right-radius:20px;
+                & .fas{
+                    display:flex;
+                    justify-content: center;
+                    background: white;
+                    border-radius: 100%;
+                    color: $couleur-tertiaire;
+                    padding: 5px;
+                    font-size: $texte-zoom;
+                    z-index: 2;
+                }
+            }
+            &:hover{
+                cursor: pointer;
+                .plats{
+                    width: auto;
+                    &__animation{
+                        margin-right: 20px;
+                    }
+                    &__check{
+                        margin: 0;
+                        transition: margin-right 1000ms;
+                        & i{
+                            animation: check 1s linear forwards;
+                        }
+                    }
+                    &__texte p{
+                        animation: ellipse 500ms linear forwards;
+                    }
 
+                }
+            }
+            
         }
     }
 }

@@ -1,9 +1,10 @@
 .bouton{
     @include bouton_project;
-    &:hover{ 
-        box-shadow: $box-shadow-hover;
-        background-image: linear-gradient(
-            lighten($couleur-secondaire,05%),
-            lighten($couleur-primaire,05%));
+    z-index: 1;
+    position: relative;
+    &:hover{
+        &::after{ 
+            opacity: 1;
+        }
     }
 } 
