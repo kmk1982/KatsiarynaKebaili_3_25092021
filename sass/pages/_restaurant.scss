@@ -28,31 +28,31 @@
         padding: 5%;
     }
     & .type_plats{
+        overflow: hidden;
         &__titre{
             text-transform:uppercase;
             & span{
-                text-underline-offset: 8px;
-                text-decoration-thickness: 3px;
-                text-decoration-line: underline ;
-                text-decoration-color:$couleur-tertiaire;
-                text-decoration-style: solid;
+                padding-bottom: 5px;
+                border-bottom: 3px solid $couleur-tertiaire;
             }
         }
         &__liste{
+            animation: 2s ease-in-out progressive;
+            animation-delay: 0s;
             & div:nth-child(1){
-                animation: 1s ease-in 1.5s both progressive;
-                animation-delay: 0s;
-            }
-            & div:nth-child(2){
-                animation: 1s ease-in 1.5s both progressive;
+                animation: 3ms ease-in 1.5s both translationy;
                 animation-delay: 0.5s;
             }
+            & div:nth-child(2){
+                animation: 3ms ease-in 1.5s both translationy;
+                animation-delay: 1s;
+            }
             & div:nth-child(3){
-                animation: 1s ease-in 1.5s both progressive;
+                animation: 3s ease-in 1.5s both translationy;
                 animation-delay: 1.5s;
             }
             & div:nth-child(4){
-                animation: 1s ease-in 1.5s both progressive;
+                animation: 3s ease-in 1.5s both translationy;
                 animation-delay: 2s;
             }
             @include g-mobile-only{
@@ -99,6 +99,7 @@
                 justify-content: space-between;
             }
             &__prix{
+                padding: 0 5px 0 5px;
                 font-weight: bold;
             }
             &__check{
@@ -111,6 +112,7 @@
                 background-color: $couleur-tertiaire;
                 border-top-right-radius:20px;
                 border-bottom-right-radius:20px;
+                transition: 1s ease-in-out;
                 & .fas{
                     display:flex;
                     justify-content: center;
@@ -122,28 +124,25 @@
                     z-index: 2;
                 }
             }
+            & p{    
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                transition: 1s ease-in-out;
+            }
             &:hover{
                 cursor: pointer;
                 .plats{
                     width: auto;
-                    &__animation{
-                        margin-right: 20px;
-                    }
                     &__check{
                         margin: 0;
-                        transition: margin-right 1000ms;
                         & i{
-                            animation: check 1s linear 1s forwards;
+                            animation: icon-rotation 1s linear 50ms forwards;
                         }
-                    }
-                    & p{    
-                        overflow: hidden;
-                        white-space: nowrap;
-                        text-overflow: ellipsis;
                     }
                 }
                 & p{
-                    animation: ellipse 400ms ease-out forwards;
+                    animation: ellipsis 400ms ease-out forwards;
                 }
             }
             
