@@ -7,4 +7,7 @@ a{
 }
 a, p, h4, h2{
     font-family: roboto;
+}
+h2{
+    @include titre_index;
 } 

@@ -78,7 +78,7 @@
             background: $couleur-primaire;
             border-radius: 100%;
             color:  white;
-            padding: 8px 12px 8px 12px;
+            padding: 4px 12px 4px 12px;
             font-size: $texte-zoom;
             z-index: 2;
         }
@@ -139,9 +139,8 @@
             }
             & p{
                 overflow: hidden;
-                height: 10px;
+                height: 15px;
                 z-index: 2;
-                text-transform: capitalize;
                 margin-left: -100px;
                 padding: 10px;
                 background-color: $couleur-tertiaire;
