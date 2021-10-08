@@ -2,7 +2,7 @@
 body{
     max-width: 99%;
     .main {
-        animation: progressive 5s 1ms;
+        animation: progressive 3s 1ms;
     }
 }
 
@@ -12,6 +12,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 1%;
     border-top: 3px solid darken(white,20%);
     overflow: hidden;
     &__localisations{

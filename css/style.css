@@ -159,6 +159,10 @@ h4 {
   justify-content: center;
   align-items: center;
   padding-left: 5%;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  margin: -0.5%;
 }
 .header__titre_site {
   display: flex;
@@ -187,7 +191,6 @@ footer .fa-utensils {
   padding-right: 15px;
 }
 footer a {
-  font-style: none;
   color: white;
 }
 
@@ -196,7 +199,7 @@ body {
   max-width: 99%;
 }
 body .main {
-  animation: progressive 5s 1ms;
+  animation: progressive 3s 1ms;
 }
 
 /*---------- Presentation et futur zone de localisation ----------*/
@@ -205,6 +208,7 @@ body .main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 1%;
   border-top: 3px solid #cccccc;
   overflow: hidden;
 }
@@ -427,8 +431,8 @@ body .main {
   display: flex;
 }
 .background img {
+  margin-top: -25%;
   width: 100%;
-  height: 512px;
 }
 
 /*---------- liste des plats du restaurant ----------*/
@@ -587,7 +591,6 @@ restaurant .type_plats .plats__animation {
 }
 
 .loading-spinner {
-  color: official;
   display: flex;
   margin: auto;
   position: absolute;
