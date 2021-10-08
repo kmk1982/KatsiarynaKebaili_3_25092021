@@ -30,6 +30,7 @@
     & .type_plats{
         overflow: hidden;
         &__titre{
+            font-weight: normal;
             text-transform:uppercase;
             & span{
                 padding-bottom: 5px;
@@ -37,23 +38,23 @@
             }
         }
         &__liste{
-            animation: 2s ease-in-out progressive;
-            animation-delay: 0s;
+            animation: 4s ease-in-out progressive;
+            animation-delay: 0.5s;
             & div:nth-child(1){
-                animation: 3ms ease-in 1.5s both translationy;
-                animation-delay: 0.5s;
+                animation: 1s ease-in 1.5s both translationy;
+                animation-delay: 350ms;
             }
             & div:nth-child(2){
-                animation: 3ms ease-in 1.5s both translationy;
-                animation-delay: 1s;
+                animation: 1s ease-in 1.5s both translationy;
+                animation-delay: 700ms;
             }
             & div:nth-child(3){
-                animation: 3s ease-in 1.5s both translationy;
-                animation-delay: 1.5s;
+                animation: 1s ease-in 1.5s both translationy;
+                animation-delay: 1050ms;
             }
             & div:nth-child(4){
-                animation: 3s ease-in 1.5s both translationy;
-                animation-delay: 2s;
+                animation: 1s ease-in 1.5s both translationy;
+                animation-delay: 1400ms;
             }
             @include g-mobile-only{
                 display: flex;

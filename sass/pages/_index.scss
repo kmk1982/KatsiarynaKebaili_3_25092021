@@ -53,7 +53,7 @@
     margin-top: 25px;
     padding: $haut_bas;
     &__titre{
-        padding-left: 50px;      
+        padding-left: 25px;      
         @include titre_index;
     }
     &__list{
@@ -64,14 +64,17 @@
             display: flex;
             flex-direction:row;
             flex-wrap: wrap;
-            justify-content:space-evenly;
         }
     }
     &__element{
         display: flex;
         align-items: center;
         margin: $haut_bas;
+        margin-left: -20px;
         font-size: $texte-zoom;
+        @include g-mobile-only{
+            margin-left: auto;
+        }
         &__nombres{
             display:flex;
             justify-content: center;
@@ -90,8 +93,8 @@
             height: 100px;
             margin-left: -20px;
             @include bouton-fonction;
-                font-weight: bold;
-                font-size: $texte-zoom;
+            font-weight: bold;
+            font-size: $texte-zoom;
             & .fas{
                 color: grey;            
                 font-size: $texte-zoom;

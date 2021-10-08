@@ -93,6 +93,10 @@ h2 {
   font-size: 200%;
 }
 
+h4 {
+  font-weight: normal;
+}
+
 @keyframes loading-spinner {
   0% {
     opacity: 1;
@@ -246,7 +250,7 @@ footer a {
   padding: 20px 0 20px 0;
 }
 .fonctionnement__titre {
-  padding-left: 50px;
+  padding-left: 25px;
   margin: 0;
   font-weight: bold;
   font-size: 200%;
@@ -261,14 +265,19 @@ footer a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
   }
 }
 .fonctionnement__element {
   display: flex;
   align-items: center;
   margin: 20px 0 20px 0;
+  margin-left: -20px;
   font-size: 120%;
+}
+@media screen and (min-width: 699px) {
+  .fonctionnement__element {
+    margin-left: auto;
+  }
 }
 .fonctionnement__element__nombres {
   display: flex;
@@ -401,6 +410,7 @@ restaurant {
   overflow: hidden;
 }
 .restaurant .type_plats__titre {
+  font-weight: normal;
   text-transform: uppercase;
 }
 .restaurant .type_plats__titre span {
@@ -409,23 +419,23 @@ restaurant {
 }
 .restaurant .type_plats__liste {
   animation: 4s ease-in-out progressive;
-  animation-delay: 0s;
-}
-.restaurant .type_plats__liste div:nth-child(1) {
-  animation: 3ms ease-in 1.5s both translationy;
   animation-delay: 0.5s;
 }
+.restaurant .type_plats__liste div:nth-child(1) {
+  animation: 1s ease-in 1.5s both translationy;
+  animation-delay: 350ms;
+}
 .restaurant .type_plats__liste div:nth-child(2) {
-  animation: 3ms ease-in 1.5s both translationy;
-  animation-delay: 1s;
+  animation: 1s ease-in 1.5s both translationy;
+  animation-delay: 700ms;
 }
 .restaurant .type_plats__liste div:nth-child(3) {
-  animation: 3s ease-in 1.5s both translationy;
-  animation-delay: 1.5s;
+  animation: 1s ease-in 1.5s both translationy;
+  animation-delay: 1050ms;
 }
 .restaurant .type_plats__liste div:nth-child(4) {
-  animation: 3s ease-in 1.5s both translationy;
-  animation-delay: 2s;
+  animation: 1s ease-in 1.5s both translationy;
+  animation-delay: 1400ms;
 }
 @media screen and (min-width: 699px) {
   .restaurant .type_plats__liste {
@@ -602,30 +612,5 @@ restaurant .type_plats .plats__animation {
   transform: rotate(330deg);
   animation-delay: 0s;
 }
-
-.la_palette_du_gout {
-  background: no-repeat center/cover url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-}
-
-.la_note_enchantée {
-  background: no-repeat center/cover url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
-}
-
-.a_la_francaise {
-  background: no-repeat center/cover url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-}
-
-.le_delice_des_sens {
-  background: no-repeat center/cover url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-}
-
-/*
-@import "./utils/extensions";
-@import "./base/typography";
-@import "./layouts/container";
-@import "./layouts/form";
-@import "./pages/work";
-@import "./pages/about";*/
-/*---------- images de l'index ----------*/
 
 /*# sourceMappingURL=style.css.map */
