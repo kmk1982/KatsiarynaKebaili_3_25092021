@@ -39,20 +39,19 @@
     font-weight: bold;
     font-size: $texte-titre;
 }
-@mixin bouton-fonction{
-    padding: 25px ;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 90%;
-    cursor: pointer;
-    border-radius: 25px;
-    box-shadow: $box-shadow;
-    border: none;
-    background-color:darken(white,5%) ;
-}
 @mixin g-mobile-only{
     @media screen and(min-width:map-get($breakpoints, g-mobile)){
+        @content;
+    }
+} 
+
+@mixin min-mobile-only{
+    @media screen and(max-width:map-get($breakpoints, min-mobile)){
+        @content;
+    }
+}
+@mixin lg-mobile-only{
+    @media screen and(max-width:map-get($breakpoints, lg-mobile)){
         @content;
     }
 } 

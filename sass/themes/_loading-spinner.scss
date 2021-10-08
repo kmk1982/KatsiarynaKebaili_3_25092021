@@ -2,10 +2,19 @@
 .loading-spinner {
     color: official;
     display: flex;
-    margin-top: 200px;
+    margin: auto;
     position:absolute;
     width: 90%;
     justify-content: center;
+    @include lg-mobile-only{
+        margin-top: 150px;
+        margin-left: -50px;
+        transform: scale(0.7);
+    }
+    @include g-mobile-only{
+        margin-top: 150px;
+        margin-left: -50px;
+    }
     & div {
         transform-origin: 100px 100px;
         opacity: 0;

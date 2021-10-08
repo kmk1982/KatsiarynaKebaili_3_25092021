@@ -1,14 +1,19 @@
 /*---------- loading-spinner ----------*/
-.main {
-    animation: progressive 5s 1ms;
+body{
+    max-width: 99%;
+    .main {
+        animation: progressive 5s 1ms;
+    }
 }
 
 /*---------- Presentation et futur zone de localisation ----------*/
 .decouverte{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     border-top: 3px solid darken(white,20%);
+    overflow: hidden;
     &__localisations{
         overflow: hidden;
         display: flex;
@@ -47,11 +52,42 @@
 }
 /*---------- fonction(menu) du site ----------*/
 .fonctionnement{
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    align-items:left;
+    align-items:center;
     margin-top: 25px;
     padding: $haut_bas;
+    @include min-mobile-only{
+        overflow: visible;
+        &__list{
+            padding:10px;}
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 3px;
+        &__element{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            margin: 3px;
+            &__bouton{
+                overflow: hidden;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: -10px;
+                & .fas{
+                    padding: 15px 5px 5px 5px;
+                }
+            }
+        }
+
+    }
     &__titre{
         padding-left: 25px;      
         @include titre_index;
@@ -63,6 +99,7 @@
         @include g-mobile-only{
             display: flex;
             flex-direction:row;
+            justify-content: center;
             flex-wrap: wrap;
         }
     }
@@ -73,7 +110,8 @@
         margin-left: -20px;
         font-size: $texte-zoom;
         @include g-mobile-only{
-            margin-left: auto;
+            justify-content: space-evenly;
+            margin: 15px auto 15px auto;
         }
         &__nombres{
             display:flex;
@@ -87,12 +125,20 @@
         }
         &__bouton{
             z-index: 1;
-            width: 100%;
-            min-width: 400px;
+            min-width: 250px;
             max-width: 512px;
             height: 100px;
             margin-left: -20px;
-            @include bouton-fonction;
+            padding: 25px ;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 90%;
+            cursor: pointer;
+            border-radius: 25px;
+            box-shadow: $box-shadow;
+            border: none;
+            background-color:darken(white,5%) ;
             font-weight: bold;
             font-size: $texte-zoom;
             & .fas{
@@ -128,17 +174,23 @@
         background-color:white;
         border-radius: 20px;
         margin: $haut_bas;
+        min-width: 200px;
         @include g-mobile-only{
-            min-width: 380px;
+            max-width: 380px;
+        }
+        @include min-mobile-only{
+            overflow: hidden;
+            max-height: 320px;
         }
         &__background{
-            display: flex;
+            overflow: hidden;
+            max-height: 250px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
             & img{
-                z-index: 1;
-                border-top-left-radius: 20px;
-                border-top-right-radius: 20px;
                 width:100%;
-                height: 300px;
+                min-height: 300px;
+                z-index: 1;
             }
             & p{
                 overflow: hidden;
@@ -155,8 +207,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding:$droit_gauche;
-            text-transform: capitalize;
+            margin: 5%;
             color: black;
         }
     }
