@@ -1,3 +1,6 @@
+body{
+    margin-top:0 ;
+}
 /*---------- image du restaurant ----------*/
 .background{
     display: flex;
@@ -12,7 +15,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: left;
     padding: 5%;
     background-color:$font-gris ;
     margin-top: -15%;
@@ -76,6 +78,10 @@
             background-color: white;
             margin: $haut_bas;
             border-radius: 20px;
+            @include min-mobile-only{
+                min-width: 230px;
+                max-height: 150px;
+            }
             @include g-mobile-only{
                 margin: 5px;
                 width: 450px;
@@ -130,6 +136,11 @@
                 white-space: nowrap;
                 text-overflow: ellipsis;
                 transition: 1s ease-in-out;
+                @include min-mobile-only{
+                    overflow:visible;
+                    white-space: normal;
+                    text-overflow:initial;
+                }
             }
             &:hover{
                 cursor: pointer;
@@ -153,7 +164,6 @@
 .bouton_commander{
     display: flex;
     justify-content: center;
-    align-items: left;
     background-color:$font-gris ;
     padding-bottom: 50px;
 

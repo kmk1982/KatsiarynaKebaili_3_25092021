@@ -4,7 +4,9 @@
   css-property: value;
 }*/
 .bouton {
-  width: 280px;
+  width: 100%;
+  min-width: 250px;
+  max-width: 280px;
   margin: 25px;
   padding: 15px 25px 15px 25px;
   text-align: center;
@@ -162,7 +164,6 @@ h4 {
   position: relative;
   z-index: 1;
   background-color: white;
-  margin: -0.5%;
 }
 .header__titre_site {
   display: flex;
@@ -208,7 +209,6 @@ body .main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 1%;
   border-top: 3px solid #cccccc;
   overflow: hidden;
 }
@@ -426,6 +426,10 @@ body .main {
   color: black;
 }
 
+body {
+  margin-top: 0;
+}
+
 /*---------- image du restaurant ----------*/
 .background {
   display: flex;
@@ -440,7 +444,6 @@ restaurant {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: left;
   padding: 5%;
   background-color: #f2f2f2;
   margin-top: -15%;
@@ -509,6 +512,12 @@ restaurant {
   margin: 20px 0 20px 0;
   border-radius: 20px;
 }
+@media screen and (max-width: 400px) {
+  .restaurant .type_plats .plats {
+    min-width: 230px;
+    max-height: 150px;
+  }
+}
 @media screen and (min-width: 699px) {
   .restaurant .type_plats .plats {
     margin: 5px;
@@ -566,6 +575,13 @@ restaurant .type_plats .plats__animation {
   text-overflow: ellipsis;
   transition: 1s ease-in-out;
 }
+@media screen and (max-width: 400px) {
+  .restaurant .type_plats .plats p {
+    overflow: visible;
+    white-space: normal;
+    text-overflow: initial;
+  }
+}
 .restaurant .type_plats .plats:hover {
   cursor: pointer;
 }
@@ -585,7 +601,6 @@ restaurant .type_plats .plats__animation {
 .bouton_commander {
   display: flex;
   justify-content: center;
-  align-items: left;
   background-color: #f2f2f2;
   padding-bottom: 50px;
 }

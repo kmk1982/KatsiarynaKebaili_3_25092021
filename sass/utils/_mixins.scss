@@ -3,7 +3,9 @@
 }*/
 
 @mixin bouton_project{
-    width: 280px;
+    width: 100%;
+    min-width: 250px;
+    max-width: 280px;
     margin: 25px;
     padding: 15px 25px 15px 25px ;
     text-align: center;
@@ -47,6 +49,11 @@
 
 @mixin min-mobile-only{
     @media screen and(max-width:map-get($breakpoints, min-mobile)){
+        @content;
+    }
+}
+@mixin xs-mobile-only{
+    @media screen and(max-width:map-get($breakpoints, xs-mobile)){
         @content;
     }
 }
