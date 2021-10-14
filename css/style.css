@@ -628,7 +628,7 @@ restaurant .type_plats .plats__animation {
 .loading-spinner div {
   transform-origin: 100px 100px;
   opacity: 0;
-  animation: loading-spinner 1s linear 5;
+  animation: loading-spinner 1s linear 4;
 }
 .loading-spinner div::after {
   content: " ";
@@ -638,7 +638,7 @@ restaurant .type_plats .plats__animation {
   left: 37px;
   width: 12px;
   height: 36px;
-  border-radius: 20%;
+  border-radius: 90%;
   background-image: linear-gradient(#ff93e1, #a16be0);
 }
 .loading-spinner div:nth-child(1) {
