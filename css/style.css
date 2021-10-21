@@ -163,6 +163,7 @@ h4 {
   justify-content: center;
   align-items: center;
   padding-left: 5%;
+  margin-top: 0px;
   position: relative;
   z-index: 1;
   background-color: white;
@@ -443,12 +444,12 @@ body .main {
   display: flex;
 }
 .background img {
-  margin-top: -25%;
+  margin-top: 1%;
   width: 100%;
 }
 
 /*---------- liste des plats du restaurant ----------*/
-restaurant {
+.restaurant {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -532,7 +533,7 @@ restaurant {
     width: 450px;
   }
 }  
-restaurant .type_plats .plats__animation {
+.restaurant .type_plats .plats__animation {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
