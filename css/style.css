@@ -45,16 +45,18 @@
 }
 .heart .far {
   position: absolute;
-  top: 0;
+  top: -10px;
+  top:-10;
   left: 0;
   padding: 5px;
-  font-size: 200%;
+  font-size: 250%;
 }
 .heart .fas {
-  top: 0;
+  position: relative;
+  top: -10px;
   left: 0;
   padding: 5px;
-  font-size: 200%;
+  font-size: 250%;
   background: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
@@ -222,8 +224,8 @@ body .main {
   background-color: #e0e0e0;
 }
 .decouverte__localisations__search {
-  margin-left: 5%;
-  width: 160px;
+  margin-left: 4%;
+  width: 180px;
   border: none;
   font-weight: bold;
   font-size: 120%;
@@ -244,7 +246,7 @@ body .main {
 .decouverte__restaurant__titre {
   margin: 0;
   font-weight: bold;
-  font-size: 200%;
+  font-size: 180%;
 }
 .decouverte__restaurant__texte {
   font-size: 120%;
@@ -295,7 +297,8 @@ body .main {
   padding-left: 25px;
   margin: 0;
   font-weight: bold;
-  font-size: 200%;
+  font-size: 180%;
+  margin-right: 45%;
 }
 .fonctionnement__list {
   display: flex;
@@ -303,6 +306,11 @@ body .main {
   justify-content: left;
 }
 @media screen and (min-width: 699px) {
+  .fonctionnement__titre {
+    margin-right: 85%;
+    margin: 0;
+    width: 100%;
+  } 
   .fonctionnement__list {
     display: flex;
     flex-direction: row;
@@ -315,7 +323,7 @@ body .main {
   align-items: center;
   margin: 20px 0 20px 0;
   margin-left: -20px;
-  font-size: 120%;
+  font-size: 100%;
 }
 @media screen and (min-width: 699px) {
   .fonctionnement__element {
@@ -335,8 +343,8 @@ body .main {
 }
 .fonctionnement__element__bouton {
   z-index: 1;
-  min-width: 430px;
-  max-width: 512px;
+  min-width: 360px;
+  max-width: 699px;
   height: 100px;
   margin-left: -18px;
   margin-right: 20px;
@@ -370,6 +378,7 @@ body .main {
   margin-top: 20px;
   background-color: #f2f2f2;
   padding: 20px;
+  font-size: 90%;
 }
 @media screen and (min-width: 699px) {
   .choix__list {
@@ -385,12 +394,7 @@ body .main {
   background-color: white;
   border-radius: 20px;
   margin: 20px 0 20px 0;
-  min-width: 200px;
-}
-@media screen and (min-width: 699px) {
-  .choix__restaurant {
-    max-width: 380px;
-  }
+  max-width: 380px;
 }
 @media screen and  (max-width: 400px) {
   .choix__restaurant {
@@ -409,11 +413,14 @@ body .main {
   min-height: 300px;
   z-index: 1;
 }
-.choix__restaurant__background p {
+.new {
   overflow: hidden;
+  position: absolute;
   height: 15px;
+  width: 60px;
   z-index: 2;
-  margin-left: -100px;
+  margin-left: 265px;
+  margin-top: 25px;
   padding: 10px;
   background-color: #99E2D0;
   color: #1b6150;
@@ -425,10 +432,10 @@ body .main {
   justify-content: space-between;
   margin: 5%;
   color: black;
+  font-size: 75%;
 }
-
-body {
-  margin-top: 0;
+.choix__restaurant__designation--text p {
+  font-size: 200%;
 }
 
 /*---------- image du restaurant ----------*/
