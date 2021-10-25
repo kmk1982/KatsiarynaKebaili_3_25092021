@@ -16,13 +16,13 @@ body{
     flex-direction: column;
     justify-content: space-between;
     padding: 5%;
-    background-color:$font-gris ;
+    background-color: $font-gris;
     margin-top: -15%;
     & .titres_page{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color:$font-gris ;
+        background-color: $font-gris;
         width: 101%;
         border-top-left-radius: 50px;
         border-top-right-radius: 50px;  
@@ -164,7 +164,6 @@ body{
 .bouton_commander{
     display: flex;
     justify-content: center;
-    background-color:$font-gris ;
+    background-color: $font-gris;
     padding-bottom: 50px;
-
 }

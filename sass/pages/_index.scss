@@ -125,7 +125,7 @@ body{
             justify-content: center;
             background: $couleur-primaire;
             border-radius: 100%;
-            color:  white;
+            color:white;
             padding: 4px 12px 4px 12px;
             font-size: $texte-zoom;
             z-index: 2;
@@ -135,7 +135,7 @@ body{
             min-width: 360px;
             max-width: 699px;
             height: 100px;
-            margin-left: -20px;
+            margin-left: -18px;
             padding: 25px ;
             display: flex;
             justify-content: space-evenly;
@@ -147,7 +147,7 @@ body{
             border: none;
             background-color:darken(white,5%) ;
             font-weight: bold;
-            font-size: $texte-zoom;
+            font-size: 120%;
             & .fas{
                 color: grey;            
                 font-size: $texte-zoom;
