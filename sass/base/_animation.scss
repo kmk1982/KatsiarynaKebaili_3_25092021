@@ -71,20 +71,16 @@
     }
   }
   @keyframes loading-animation {
-    /* Keyframe de l'animation loading-animation (disparition) */
     to {
       visibility: hidden;
       display: none;
     }
   }
   @keyframes spin {
-    /* Keyframe de l'animation "spin" (rotation de l'élément du spinner) */
     from {
       transform: rotate(0deg);
-      /* situation initiale */
     }
     to {
       transform: rotate(360deg);
-      /* situation finale */
     }
   }

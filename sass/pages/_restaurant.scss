@@ -42,6 +42,10 @@ body{
         &__liste{
             animation: 4s ease-in-out progressive;
             animation-delay: 0.5s;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
             & div:nth-child(1){
                 animation: 1s ease-in 1.5s both translationy;
                 animation-delay: 350ms;
@@ -60,9 +64,8 @@ body{
             }
             @include g-mobile-only{
                 display: flex;
-                flex-direction:row;
-                flex-wrap: wrap;
-                justify-content:space-evenly;
+                flex-direction: column;
+                width: 600px;
             }
         }
         & .plats{
@@ -83,8 +86,10 @@ body{
                 max-height: 150px;
             }
             @include g-mobile-only{
-                margin: 5px;
-                width: 450px;
+                min-width: 600px;
+            }
+            @include desktop{
+                min-width: 800px;
             }
             &__animation{
                 display: flex;

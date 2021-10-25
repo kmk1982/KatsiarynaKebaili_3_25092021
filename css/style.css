@@ -470,6 +470,11 @@ body .main {
 .restaurant .type_plats__liste {
   animation: 4s ease-in-out progressive;
   animation-delay: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 .restaurant .type_plats__liste div:nth-child(1) {
   animation: 1s ease-in 1.5s both translationy;
@@ -490,9 +495,8 @@ body .main {
 @media screen and (min-width: 699px) {
   .restaurant .type_plats__liste {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-direction: column;
+    width: 600px;
   }
 }
 .restaurant .type_plats .plats {
@@ -517,8 +521,12 @@ body .main {
 }
 @media screen and (min-width: 699px) {
   .restaurant .type_plats .plats {
-    margin: 5px;
-    width: 450px;
+    min-width: 600px;
+  }
+}  
+@media screen and (min-width: 1024px) {
+  .restaurant .type_plats .plats {
+    min-width: 800px;
   }
 }  
 .restaurant .type_plats .plats__animation {
