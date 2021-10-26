@@ -4,9 +4,11 @@ header{
     justify-content:center;
     align-items: center;
     padding-left: 5%;
+    margin-top: 0px;
     position: relative;
     z-index: 1;
     background-color: white;
+    }
     &__titre_site{
         display:flex;
         width: 90%;
@@ -16,6 +18,5 @@ header{
         border: none;
         background-color: white;
         font-size: x-large;
-        cursor: pointer
+        cursor: pointer;
     }
-} 

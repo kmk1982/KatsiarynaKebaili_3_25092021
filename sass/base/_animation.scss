@@ -1,12 +1,3 @@
-
-@keyframes loading-spinner {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-}
 @keyframes main{
     from{
         transform: translateX(-9999px);
@@ -55,3 +46,41 @@
         opacity:0;
     }
 }
+@keyframes loader {
+    0% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+        z-index: 1;
+    }
+    99% {
+        opacity: 0;
+    }   
+     100% {
+        opacity: 0;
+        z-index: -1;
+    }
+  }
+@keyframes logo {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes loading-animation {
+    to {
+      visibility: hidden;
+      display: none;
+    }
+  }
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
